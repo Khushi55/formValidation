@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo's List</title>
+    <link rel="stylesheet" href="formvl.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="head">TODO List</h1>
+        <form name="myForm" onsubmit="event.preventDefault();OnFormSubmit()" autocomplete="on">
+            <div id="fname">
+                <input type="text" name="name" id="name" placeholder="Please Enter your name here"><br>
+                <span class="formerror"></span>
+            </div>
+
+            <div class="container">
+                <div id="femail">
+                    <input type="email" name="email" id="email" placeholder="Enter your email "><br>
+                    <span class="formerror"></span>
+                </div>
+                <div id="fphone">
+                    <input type="text" name="phone" id="phone" placeholder="Enter your mo.number "><br>
+                    <span class="formerror" id="fon"></span>
+                </div>
+            </div>
+
+            <div id="fproject">
+                <input type="text" name="project" id="project" placeholder="Please Enter your project name here"><br>
+                <span class="formerror" id="fon"></span>
+            </div>
+
+            <div id="ftask">
+                <input type="text" name="task" id="task" placeholder="Please Enter your task name here"><br>
+                <span class="formerror" id="fon"></span>
+            </div>
+            <div class="box">
+                <div id="startdate">
+                    <label for="fsdate" class="sd">Start Date:</label><br>
+                    <input type="date" id="fsdate" name="fsdate"><br>
+                    <span class="formerror"></span>
+                </div>
+                <div id="enddate">
+                    <label for="edate" class="sd" id="endD">End Date:</label><br>
+                    <input type="date" id="edate" name="edate"><br>
+                    <span class="formerror" id="fon"></span>
+                </div>
+            </div>
+
+            <div id="radio">
+                <label>Task Status:</label>
+                <input type="radio" class="fradio" id="fradio" value="Planned" onclick="radio()">Planned
+                <input type="radio" class="fradio" id="fradio" value="In-Progress" onclick="radio()">In-Progress
+                <input type="radio" class="fradio" id="fradio" value="Done" onclick="radio()">Done
+                <span class="formerror" ></span>
+            </div>
+            <div>
+                <input type="submit" value="submit" id="submit">
+            </div>
+
+        </form>
+        <table id="tasklist">
+            <thead>
+                <th>Name</th>
+                <th>Project</th>
+                <th>Task </th>
+                <th>Status</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>CRUD</th>
+                <tr>
+                    <td>Khushaboo</td>
+                    <td>Javascript</td>
+                    <td>FrontEnd</td>
+                    <td>Done</td>
+                    <td>2022-01-01</td>
+                    <td>2022-03-12</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+
+            </thead>
+
+        </table>
+    </div>
+    <script src="formvl.js"></script>
+
+</body>
+
+</html>

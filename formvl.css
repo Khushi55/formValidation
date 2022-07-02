@@ -1,0 +1,112 @@
+#head {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+form {
+    margin-left: 430px;
+}
+
+input {
+    font-size: 18px;
+}
+
+span {
+    font-size: 14px;
+    color: red;
+}
+#fon{
+    margin-left: 10px;
+}
+
+#name {
+    width: 410px;
+    height: 30px;
+
+}
+
+#fname {
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    margin: 10px;
+}
+
+#email {
+    width: 190px;
+    height: 30px;
+}
+
+#phone {
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+
+#project {
+    width: 410px;
+    height: 30px;
+    margin: 10px;
+}
+
+#task {
+    width: 410px;
+    height: 30px;
+    margin: 10px;
+}
+
+.box {
+    display: flex;
+    margin: 10px;
+}
+
+#fsdate {
+    width: 200px;
+    height: 30px;
+}
+
+#edate {
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+
+}
+
+.sd {
+    font-size: 18px;
+}
+
+#endD {
+    margin-left: 20px;
+}
+
+#radio {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+#submit {
+    margin: 20px 0px 20px 180px;
+}
+
+#tasklist {
+    font-size: 18px;
+    margin-left: 300px;
+}
+
+#td {
+    margin-left: 50px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

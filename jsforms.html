@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOs List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <h1>TODOs List </h1>
+    <form name="myForm" onsubmit="event.preventDefault();OnFormSubmit()" autocomplete="on">
+        
+        <div class="form-group" id="name">
+           
+            <input type="text" name="fname" id="fname" placeholder="Enter your name">
+            <span class="formerror"></span>
+
+        </div>
+
+
+        <div class="form-group" id="email">
+            
+            <input type="email" name="Email" id="Email" placeholder="Enter your email">
+            <span class="formerror"></span>
+        </div>
+
+        <div class="form-group" id="phone">
+           
+            <input type="text" name="mnumber" id="mnumber" placeholder="Enter Mobile Number">
+            <span class="formerror"></span>
+        </div>
+
+
+
+        <div class="form-group" id="project">
+           
+            <input type="text" name="pname" id="pname" placeholder="Enter your project name">
+            <span class="formerror"></span>
+        </div>
+
+
+        <div class="form-group" id="task">
+          
+            <input type="text" name="tname" id="tname" placeholder="Enter your task name">
+            <span class="formerror"></span>
+        </div>
+          
+        <div class="box">
+            <div id="sdate">
+                <label class="sd">Start Date:</label>
+                <input type="date" name="fsdate" id="fsdate">
+                <span class="formerror"></span>
+            </div>
+
+            <div id="tdate">
+                <label class="sd" id="endD">End Date:</label>
+                <input type="date" name="ltdate" id="ltdate"><br>
+                <span class="formerror" id="td"></span>
+            </div>
+        </div>
+        
+        <div id="radio">
+            <label>Task Status:</label>
+            <input type="radio" onClick="radio()" name="fradio" id="fradio" value="Planned">Planned
+            <input type="radio" onClick="radio()" name="fradio" id="fradio" value="In-Progress">In-Progress
+            <input type="radio" onClick="radio()" name="fradio" id="fradio" value="Done">Done
+            <span class="formerror"></span>
+        </div>
+    
+    <div>
+        <input type="submit" id="submit" value="Submit" class="btn">
+        </div>
+    </form>
+</div>
+    <table id="tasklist">
+        <thead>
+            <th>Name</th>
+            <th>Project</th>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Crud</th>
+       
+            <tr>
+              <td>Khushaboo</td>
+              <td>Javascript</td>
+              <td>FrontEnd</td>
+              <td>In-Progress</td>
+              <td>25-04-2022</td>
+              <td>27-04-2022</td>
+              <td><button>Edit</button>
+                  <button>Delete</button></td>
+            </tr>
+        </thead>
+  </table>
+
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
